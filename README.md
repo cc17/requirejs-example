@@ -20,7 +20,7 @@ bootstrap + less + requirejs + grunt 开发环境实例
 
 ## 启动项目
 
-*   下载项目代码 [[下载地址]]()
+*   下载项目代码 [[下载地址]](https://github.com/93html/requirejs-example/)
 *   打开cmd工具，cd进项目根目录
     		`d:` `cd work/amd`
 *   安装npm依赖 `npm install`
