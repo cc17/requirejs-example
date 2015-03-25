@@ -4,12 +4,20 @@
 	<title>Require.js 实例</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="dev/js/lib/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="dev/css/style.css">
+
+
+  <!--开发环境-->
+  <!-- <link rel="stylesheet" type="text/css" href="dev/js/lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="dev/css/style.css"> -->
+
+  <!--生产环境-->
+  <link rel="stylesheet" type="text/css" href="dist/js/lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="dist/css/style.css">
+
 </head>
 <body>
 
-<nav class="navbar navbar-default">
+  <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-brand">Require.js 实例</div>
     </div>
@@ -92,48 +100,50 @@
     	<ul>
     		<li>下载项目代码 <a href="">[下载地址]</a></li>
     		<li style="margin-top:20px">打开cmd工具，cd进项目根目录
-    		<code>d:</code> <code>cd work/amd</code>
-    		</li>
-    		<li style="margin-top:20px">安装npm依赖 <code>npm install</code></li>
-    		<li style="margin-top:20px">编译项目 <code>grunt</code></li>
-    	</ul>
+          <code>d:</code> <code>cd work/amd</code>
+        </li>
+        <li style="margin-top:20px">安装npm依赖 <code>npm install</code></li>
+        <li style="margin-top:20px">编译项目 <code>grunt</code></li>
+      </ul>
     </div>
 
   </div>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        <input type="tel" data-toggle="telinput" class="form-control">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button id="btn-ok" type="button" class="btn btn-primary">Save changes</button>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <input type="tel" data-toggle="telinput" class="form-control">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button id="btn-ok" type="button" class="btn btn-primary">Save changes</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-<script type="text/javascript" src="dev/js/lib/require.js"></script>
+  <!--开发环境-->
+<!-- <script type="text/javascript" src="dev/js/lib/require.js"></script>
 <script type="text/javascript" src="dev/js/requirejs-config.js"></script>
 <script type="text/javascript">
 require.config({baseUrl: 'dev/js'});
 </script>
-<script type="text/javascript" src="dev/js/app/home.js"></script>
+<script type="text/javascript" src="dev/js/app/home.js"></script> -->
 
 
-<!-- <script type="text/javascript" src="dist/js/lib/require.js"></script>
+<!--生产环境-->
+<script type="text/javascript" src="dist/js/lib/require.js"></script>
 <script type="text/javascript" src="dist/js/requirejs-config.js"></script>
 <script type="text/javascript">
-require.config({baseUrl: 'dist/js'});
+  require.config({baseUrl: 'dist/js'});
 </script>
-<script type="text/javascript" src="dist/js/app/home.js"></script> -->
+<script type="text/javascript" src="dist/js/app/home.js"></script>
 
 </body>
 </html>
