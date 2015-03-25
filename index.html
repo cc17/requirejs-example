@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>Require.js 实例</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="dev/js/lib/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="dev/css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-brand">Require.js 实例</div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center" style="margin-top:40px;">
+        模块化开发实例<br>
+        <small>Bootstrap + Less + Require.js + Grunt</small>
+      </h1>
+
+      <div class="text-center">
+      	<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Test</button>
+      	<button class="btn btn-success btn-lg" data-toggle="scrollto" data-target="#start">Start now!</button>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:60px">
+      <div class="col-md-3">
+        <div class="text-center"><img src="" data-original="https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/boostrap-128.png" height="100"></div>
+        <h3 class="text-center">Bootstrap</h3>
+        <p>Bootstrap 是最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目。</p>
+        <a href="http://v3.bootcss.com/" target="_blank">查看文档</a>
+      </div>
+
+      <div class="col-md-3">
+        <div class="text-center"><img src="" data-original="http://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LESS_Logo.svg/2000px-LESS_Logo.svg.png" height="100"></div>
+        <h3 class="text-center">LESS</h3>
+        <p>Less 是一门 CSS 预处理语言，它扩充了 CSS 语言，增加了诸如变量、混合（mixin）、函数等功能，让 CSS 更易维护、方便制作主题、扩充。</p>
+        <a href="http://less.bootcss.com/" target="_blank">查看文档</a>
+      </div>
+
+      <div class="col-md-3">
+        <div class="text-center"><img src="" data-original="http://requirejs.cn/i/logo.png" height="100"></div>
+        <h3 class="text-center">Require.js</h3>
+        <p>RequireJS 是一个JavaScript模块加载器。它非常适合在浏览器中使用，但它也可以用在其他脚本环境, 就像 Rhino and Node. 使用RequireJS加载模块化脚本将提高代码的加载速度和质量。</p>
+        <a href="http://requirejs.cn/" target="_blank">查看文档</a> |
+        <a href="http://requirejs.org/" target="_blank">英文文档</a>
+      </div>
+
+      <div class="col-md-3">
+        <div class="text-center"><img src="" data-original="http://gruntjs.com/img/grunt-logo.png" height="100"></div>
+        <h3 class="text-center">Grunt</h3>
+        <p>Grunt 是一个基于任务的JavaScript工程命令行构建工具。</p>
+        <a href="http://www.gruntjs.net/">查看文档</a>
+      </div>
+    </div>
+
+    <div id="start" class="row" style="margin-top:60">
+    	<h2 class="page-header">环境搭建</h2>
+
+    	<ul>
+    		<li>安装Node <a href="https://nodejs.org/">[下载地址]</a>
+    			<ul>
+    				<li>点install下载安装包</li>
+    				<li>安装完成后打开cmd</li>
+    				<li>输入 <code>node -v</code> 回车，返回版本信息说明安装成功了</li>
+    				<li>Nodejs已经内置Npm包管理器了，<code>npm -v</code> 查看npm版本信息</li>
+    			</ul>
+    		</li>
+
+    		<li style="margin-top:20px">全局安装Grunt
+    			<ul>
+    				<li>在cmd中输入 <code>npm install -g grunt</code> 回车，就会自动安装grunt</li>
+    			</ul>
+    		</li>
+
+    		<li style="margin-top:20px">安装Winless <a href="http://winless.org/">[下载地址]</a>
+    			<ul>
+    				<li>打开winless,点击Add folder，选中 dev/less 目录，确定</li>
+    				<li>右边列表里只选中style.less</li>
+    				<li>去掉minify选项</li>
+    			</ul>
+    		</li>
+    	</ul>
+
+    	<h2 class="page-header">启动项目</h2>
+    	<ul>
+    		<li>下载项目代码 <a href="">[下载地址]</a></li>
+    		<li style="margin-top:20px">打开cmd工具，cd进项目根目录
+    		<code>d:</code> <code>cd work/amd</code>
+    		</li>
+    		<li style="margin-top:20px">安装npm依赖 <code>npm install</code></li>
+    		<li style="margin-top:20px">编译项目 <code>grunt</code></li>
+    	</ul>
+    </div>
+
+  </div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <input type="tel" data-toggle="telinput" class="form-control">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button id="btn-ok" type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="dev/js/lib/require.js"></script>
+<script type="text/javascript" src="dev/js/requirejs-config.js"></script>
+<script type="text/javascript">
+require.config({baseUrl: 'dev/js'});
+</script>
+<script type="text/javascript" src="dev/js/app/home.js"></script>
+
+
+<!-- <script type="text/javascript" src="dist/js/lib/require.js"></script>
+<script type="text/javascript" src="dist/js/requirejs-config.js"></script>
+<script type="text/javascript">
+require.config({baseUrl: 'dist/js'});
+</script>
+<script type="text/javascript" src="dist/js/app/home.js"></script> -->
+
+</body>
+</html>
