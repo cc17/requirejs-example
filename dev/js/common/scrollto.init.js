@@ -1,5 +1,5 @@
 define(['jquery', 'jquery.scrollto'], function($) {
-	// console.log('jquery.scrollto 载入完成');
+	console.log('Module scrollto.init loaded.');
 	$(function() {
 		$('[data-toggle=scrollto]').each(function() {
 			var $this = $(this),
