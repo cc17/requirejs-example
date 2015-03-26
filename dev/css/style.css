@@ -4,3 +4,18 @@ body {
 .jumbotron {
   background: #fff;
 }
+#affix ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#affix ul li {
+  margin-bottom: 10px;
+}
+#affix ul li:last-child {
+  margin-bottom: 0;
+}
+#affix.affix {
+  top: 60px;
+  width: 165px;
+}

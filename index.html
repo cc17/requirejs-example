@@ -68,45 +68,79 @@
       </div>
     </div>
 
+    <hr>
+
     <div id="start" class="row" style="margin-top:60">
-    	<h2 class="page-header">环境搭建</h2>
+      <div class="col-md-10">
+        <h2 id="enviroment" class="page-header">环境搭建</h2>
 
-    	<ul>
-    		<li>安装Node <a href="https://nodejs.org/">[下载地址]</a>
-    			<ul>
-    				<li>点install下载安装包</li>
-    				<li>安装完成后打开cmd</li>
-    				<li>输入 <code>node -v</code> 回车，返回版本信息说明安装成功了</li>
-    				<li>Nodejs已经内置Npm包管理器了，<code>npm -v</code> 查看npm版本信息</li>
-    			</ul>
-    		</li>
+        <ul>
+          <li>安装Node <a href="https://nodejs.org/">[下载地址]</a>
+            <ul>
+              <li>点install下载安装包</li>
+              <li>安装完成后打开cmd</li>
+              <li>输入 <code>node -v</code> 回车，返回版本信息说明安装成功了</li>
+              <li>Nodejs已经内置Npm包管理器了，<code>npm -v</code> 查看npm版本信息</li>
+            </ul>
+          </li>
 
-    		<li style="margin-top:20px">全局安装Grunt
-    			<ul>
-    				<li>在cmd中输入 <code>npm install -g grunt</code> 回车，就会自动安装grunt</li>
-    			</ul>
-    		</li>
+          <li style="margin-top:20px">全局安装Grunt
+            <ul>
+              <li>在cmd中输入 <code>npm install -g grunt</code> 回车，就会自动安装grunt</li>
+            </ul>
+          </li>
 
-    		<li style="margin-top:20px">安装Winless <a href="http://winless.org/">[下载地址]</a>
-    			<ul>
-    				<li>打开winless,点击Add folder，选中 dev/less 目录，确定</li>
-    				<li>右边列表里只选中style.less</li>
-    				<li>去掉minify选项</li>
-    			</ul>
-    		</li>
-    	</ul>
+          <li style="margin-top:20px">安装Winless <a href="http://winless.org/">[下载地址]</a>
+            <ul>
+              <li>打开winless,点击Add folder，选中 dev/less 目录，确定</li>
+              <li>右边列表里只选中style.less</li>
+              <li>去掉minify选项</li>
+            </ul>
+          </li>
+        </ul>
 
-    	<h2 class="page-header">启动项目</h2>
-    	<ul>
-    		<li>下载项目代码 <a href="">[下载地址]</a></li>
-    		<li style="margin-top:20px">打开cmd工具，cd进项目根目录
-          <code>d:</code> <code>cd work/amd</code>
-        </li>
-        <li style="margin-top:20px">安装npm依赖 <code>npm install</code></li>
-        <li style="margin-top:20px">编译项目 <code>grunt</code></li>
-      </ul>
+        <h2 id="run" class="page-header">启动项目</h2>
+        <ul>
+          <li>下载项目代码 <a href="">[下载地址]</a></li>
+          <li style="margin-top:20px">打开cmd工具，cd进项目根目录
+            <code>d:</code> <code>cd work/amd</code>
+          </li>
+          <li style="margin-top:20px">安装npm依赖 <code>npm install</code></li>
+          <li style="margin-top:20px">编译项目 <code>grunt</code></li>
+        </ul>
+
+        <h2 id="modules" class="page-header">模块划分</h2>
+        <ul>
+          <li>dev/js/
+            <ul>
+              <li>app <span>应用模块</span></li>
+              <li>common <span>通用模块</span></li>
+              <li>lib <span>第三方库模块</span></li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2 id="grunt" class="page-header">打包策略</h2>
+        <div>
+          <img src="" data-original="http://ww4.sinaimg.cn/large/80a06c8djw1eqj54wbckdj20ml09xmy1.jpg" height="200">
+        </div>
+      </div>
+
+      <!-- <div class="col-md-2">
+        <nav id="affix">
+          <div class="panel panel-default">
+          <div class="panel-body">
+          <ul>
+            <li><a href="#enviroment" data-toggle="scrollto">环境搭建</a></li>
+            <li><a href="#run" data-toggle="scrollto">项目启动</a></li>
+            <li><a href="#modules" data-toggle="scrollto">模块划分</a></li>
+          </ul>
+          </div>
+          </div>
+        </nav>
+      </div> -->
+
     </div>
-
   </div>
 
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
