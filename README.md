@@ -25,3 +25,15 @@ bootstrap + less + requirejs + grunt 开发环境实例
     		`d:` `cd work/amd`
 *   安装npm依赖 `npm install`
 *   编译项目 `grunt`
+
+## 模块划分
+
+*   dev/js/
+
+    *   app <span>应用模块</span>
+    *   common <span>通用模块</span>
+    *   lib <span>第三方库模块</span>
+
+## 打包策略
+
+![](http://ww4.sinaimg.cn/large/80a06c8djw1eqj54wbckdj20ml09xmy1.jpg)
