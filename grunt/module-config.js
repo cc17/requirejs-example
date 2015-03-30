@@ -1,9 +1,5 @@
 var deps = [
-		'jquery',
-		'jquery.lazyload',
-		'bootstrap',
-		'jquery.telinput',
-		'jquery.scrollto',
+		'app/main'
 	],
 
 	modules = [
@@ -15,11 +11,16 @@ var deps = [
 
 for (var i = 0; i < modules.length; i++) {
 
-	arrEodules[i] = {
-		name: modules[i],
-		exclude: deps
-	};
+	if (i == 0) {
+		arrEodules[i] = {
+			name: modules[i]
+		};
+	} else {
+		arrEodules[i] = {
+			name: modules[i],
+			exclude: deps
+		};
+	}
 };
-
 
 module.exports = arrEodules;

@@ -1,6 +1,7 @@
-requirejs(['jquery', 'common/lazyload.init', 'common/telinput.init'], function($) {
+requirejs(['app/main'], function(main) {
 	console.log('Module home loaded.');
 
+	var $ = main.$;
 
 	(function($modal) {
 		$('#btn-ok').on('click', function() {

@@ -14,12 +14,12 @@ require.config({
 			exports: '$.fn.lazyload'
 		},
 		'bootstrap': ['jquery'],
-		'jquery.telinput': {
+		'jquery.telinput': [{
 			deps: [
 				'jquery',
 				'css!lib/jquery.telinput/css/intltelinput.css'
 			]
-		},
+		}],
 		'jquery.scrollto': ['jquery'],
 	}
 
